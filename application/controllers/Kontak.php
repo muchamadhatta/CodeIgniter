@@ -1,7 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require APPPATH . '/libraries/JWT.php';
+require APPPATH . '/libraries/ExpiredException.php';
+require APPPATH . '/libraries/BeforeValidException.php';
+require APPPATH . '/libraries/SignatureInvalidException.php';
+require APPPATH . '/libraries/JWK.php';
 
 use chriskacerguis\RestServer\RestController;
+
+
+
 
 class Kontak extends RestController {
 
